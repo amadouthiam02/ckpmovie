@@ -66,14 +66,6 @@ function App() {
 
     }
 
-      //une fonction pour  chaque states de saisie 
-    // const handleSaisieTitre=(e)=>SetNewTitre(e.target.value)
-    // const handleSaisieDesc=(e)=>SetNewDesc(e.target.value)
-    // const handleSaisieRating=(e)=>SetNewRating(e.target.value)
-    // const handleSaisieURI=(e)=>SetNewURI(e.target.value) 
-    // const handleSaisieFTitre=(e)=>SetNewFTitre(e.target.value) // Filtre    
-    // const handleSaisieFRating=(e)=>SetNewFRating(e.target.value) //Filtre
-
       //Fonction pour ajout de l'objet Movie
     
     const handleAjout=(titre)=>{
