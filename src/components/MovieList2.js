@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -9,22 +10,25 @@ function MovieList2(props)
         return (
 
         <>
-            
+            <ul className="list-group">            
                 {props.mylist.map((movie)=>(
-                <div className="list-group">
-                    <ul>
-                        <li key={movie.title}>
-                            {movie.title} 
+               
+
+                        <li key={movie.id}>
+                            {movie.title}-{movie.id} <button onClick= {()=>props.handleOpen(movie.title)}>Ouvrir</button>
                             <button onClick= {()=>props.handleEdit(movie.title)}>Edit</button> 
-                            <button onClick= {()=>props.handleDelete(movie.title)}>X</button></li>  
+                            <button onClick= {()=>props.handleDelete(movie.title)}>X</button> <br/>
+
+                        
                             {movie.description} <br /> 
                             Rating: {movie.rating} <br />
-                            {movie.posterURL} <hr />
-                    </ul> 
-                </div>  
+                            {movie.posterURL} <br />
+                             <hr />
+                        </li> 
+                 
                     )) }
                     
-                                    
+            </ul>                         
          </>  
 
     )
